@@ -7,15 +7,31 @@
     font-family: 'Red Rose', cursive;
     background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   }
+  body {
+    color: #434343;
+  }
 }
 
 .bg-primary {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
+.bg-sec {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+}
 .bg-cover {
   background: rgba(64, 64, 64, 0.3);
 }
-
+.text-color {
+  background: linear-gradient(90deg, #a02279 100%, #ffc089 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.text-white-lin {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 /* #mob-nav.active {
   opacity: 100%;
   z-index: 10;
