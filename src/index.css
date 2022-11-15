@@ -55,3 +55,15 @@
     opacity: 100%;
   }
 } */
+
+.starIcon {
+  fill: currentColor;
+  color: #a02279;
+
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color: #ffc089;
+}

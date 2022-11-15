@@ -8,7 +8,15 @@ import nft9 from '../assests/img/image9.png';
 import { ReactComponent as LogoOne } from '../assests/icon/logo1.svg';
 import { ReactComponent as LogoTwo } from '../assests/icon/logo2.svg';
 import { ReactComponent as LogoThree } from '../assests/icon/logo3.svg';
+import NFTCards from '../compontents/NFTCards';
+import { useEffect, useState } from 'react';
+import { nfts } from '../compontents/data';
 function Home() {
+  const [nft, setNft] = useState(null);
+  useEffect(() => {
+    // nfts.filter()
+    setNft(nfts);
+  }, []);
   return (
     <div>
       <div className="container mx-auto px-4 pt-16 pb-16 lg:pt-32">
@@ -70,14 +78,17 @@ function Home() {
           <LogoOne className="w-[150px] lg:w-[200px]" />
         </div>
       </div>
-      <div>
+      <div className="container mx-auto pt-[39px] pb-[53px] px-4 sm:px-0">
         <p className="text-4xl text-black font-bold text-center md:text-5xl md:leading-snug">
           Inspiration for your next adventure
         </p>
-        <div></div>
+
+        <div className="flex p-4 justify-center mt-[43px] flex-wrap gap-6">
+          {nft && nft.map((nf) => <NFTCards nf={nf} />)}
+        </div>
       </div>
       <div className="bg-primary">
-        <div className="container py-[64px] mx-auto flex flex-col gap-16 lg:gap-6 lg:py-[100px] lg:flex-row">
+        <div className="container py-[64px] px-4 mx-auto flex flex-col gap-16 lg:gap-6 lg:py-[100px] lg:flex-row">
           <div className="flex flex-col justify-center lg:w-1/2">
             <p className="font-bold text-white-lin text-4xl md:text-5xl md:leading-snug">
               Metabnb NFTs
