@@ -10,7 +10,7 @@ function PlaceToStay() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 sm:px-0">
+    <div className="container mx-auto px-4 pt-16 lg:pt-32  sm:px-0">
       <div className="flex items-center gap-[65px]">
         <ul className="text-xl leading-[125%] flex gap-12 overflow-hidden overflow-x-scroll scroll-smooth snap-mandatory snap-x">
           <li className="cursor-pointer snap-start min-w-fit">Resturant</li>
@@ -31,7 +31,7 @@ function PlaceToStay() {
       </div>
       <div className="mt-[75px] pb-[53px]">
         <div className="flex justify-center flex-wrap gap-6">
-          {nft && nft.map((nf) => <NFTCards nf={nf} />)}
+          {nft && nft.map((nf) => <NFTCards nf={nf} key={nf.id} />)}
         </div>
       </div>
     </div>

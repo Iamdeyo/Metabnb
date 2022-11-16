@@ -10,22 +10,22 @@ import { ReactComponent as LogoTwo } from '../assests/icon/logo2.svg';
 import { ReactComponent as LogoThree } from '../assests/icon/logo3.svg';
 import NFTCards from '../compontents/NFTCards';
 import { useEffect, useState } from 'react';
-import { nfts } from '../compontents/data';
+import { Homenfts } from '../compontents/data';
 function Home() {
   const [nft, setNft] = useState(null);
   useEffect(() => {
     // nfts.filter()
-    setNft(nfts);
+    setNft(Homenfts);
   }, []);
   return (
     <div>
-      <div className="container mx-auto px-4 pt-16 pb-16 lg:pt-32 ">
+      <div className="container mx-auto px-4 pt-16 pb-16 sm:px-0 lg:pt-32 ">
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-0">
           <div className="flex flex-col text-center gap-7 md:gap-12 lg:text-start lg:w-1/2">
             <p className="text-[2.5em]  sm:text-[3em]  md:text-[3.5em] leading-[140%] tracking-tight">
-              Rent a <span className="text-color">Place</span> away from{' '}
-              <span className="text-color">Home</span> in the{' '}
-              <span className="text-color">Metaverse</span>
+              Rent a <span className="text-color font-bold">Place</span> away
+              from <span className="text-color font-bold">Home</span> in the{' '}
+              <span className="text-color font-bold">Metaverse</span>
             </p>
             <p className="text-[1.5em] leading-[146%]">
               we provide you access to luxury and affordable houses in the
@@ -72,7 +72,7 @@ function Home() {
         </div>
       </div>
       <div className="bg-primary">
-        <div className="flex container mx-auto flex-col items-center gap-6 p-[10px]  md:justify-around md:flex-row">
+        <div className="flex container mx-auto flex-col items-center gap-6 p-[10px]  md:justify-between md:flex-row">
           <LogoThree className="w-[173px] lg:w-[223px]" />
           <LogoTwo className="w-[165px] lg:w-[215px]" />
           <LogoOne className="w-[150px] lg:w-[200px]" />
@@ -83,13 +83,13 @@ function Home() {
           Inspiration for your next adventure
         </p>
 
-        <div className="flex p-4 justify-center mt-[43px] flex-wrap gap-6">
-          {nft && nft.map((nf) => <NFTCards nf={nf} />)}
+        <div className="flex p-4 justify-center mt-[43px] flex-wrap gap-6 sm:px-0">
+          {nft && nft.map((nf) => <NFTCards nf={nf} key={nf.id} />)}
         </div>
       </div>
       <div className="bg-primary">
-        <div className="container py-[64px] px-4 mx-auto flex flex-col gap-16 lg:gap-6 lg:py-[100px] lg:flex-row">
-          <div className="flex flex-col justify-center lg:w-1/2">
+        <div className="container py-[64px] px-4 mx-auto sm:px-0 flex flex-col gap-16 xl:gap-28 xl:py-[100px] xl:flex-row">
+          <div className="flex flex-col justify-center xl:w-1/3">
             <p className="font-bold text-white-lin text-4xl md:text-5xl md:leading-snug">
               Metabnb NFTs
             </p>
@@ -104,7 +104,7 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="lg:w-1/2">
+          <div className="xl:w-2/3">
             <div className="grid grid-cols-12">
               <img
                 src={nft7}

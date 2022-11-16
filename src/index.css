@@ -11,7 +11,9 @@
     color: #434343;
   }
 }
-
+body.wallet-mode {
+  overflow: hidden;
+}
 .bg-primary {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
@@ -32,9 +34,10 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-/* #mob-nav.active {
-  opacity: 100%;
+#mob-nav.active {
+  opacity: 0%;
   z-index: 10;
+  display: block;
 }
 #mob-nav > div {
   animation: navSlidein 0.35s linear forwards;
@@ -54,7 +57,7 @@
     width: 100%;
     opacity: 100%;
   }
-} */
+}
 
 .starIcon {
   fill: currentColor;

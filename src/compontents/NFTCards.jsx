@@ -21,7 +21,11 @@ function NFTCards({ nf }) {
           <p>2345km away</p>
           <p>available for 2weeks stay</p>
         </div>
-        <div className="mt-[9px] starIcon">
+        <div className="mt-[9px] gap-2 starIcon flex">
+          <Star size={12} className="starIcon" />
+          <Star size={12} className="starIcon" />
+          <Star size={12} className="starIcon" />
+          <Star size={12} className="starIcon" />
           <Star size={12} className="starIcon" />
         </div>
       </div>

@@ -14,6 +14,9 @@ module.exports = {
       colors: {
         tblack: '#434343',
       },
+      fontFamily: {
+        sora: ['Sora', 'sans-serif'],
+      },
     },
   },
   plugins: [],
