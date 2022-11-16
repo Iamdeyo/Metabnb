@@ -4,15 +4,8 @@ function NFTCards({ nf }) {
   return (
     <div
       key={nf.id}
-      className="p-4 flex flex-col gap-4 w-full h-auto rounded-[15px] border border-[#D7D7D7] md:w-fit"
+      className="p-4 flex flex-col cursor-pointer gap-4 w-full h-auto rounded-[15px] transition-all duration-300 ease-linear border border-[#D7D7D7] md:w-fit hover:shadow-lg"
     >
-      {/* height: 372px; */}
-      {/* 320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more — Extra large screens, TV */}
-
       <img
         src={nf.photo}
         alt="nft"

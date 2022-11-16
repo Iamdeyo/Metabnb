@@ -67,3 +67,7 @@
   -webkit-background-clip: text;
   background-color: #ffc089;
 }
+
+.overflow-x-scroll::-webkit-scrollbar {
+  height: 0;
+}

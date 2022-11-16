@@ -19,7 +19,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <div className="container mx-auto px-4 pt-16 pb-16 lg:pt-32">
+      <div className="container mx-auto px-4 pt-16 pb-16 lg:pt-32 ">
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-0">
           <div className="flex flex-col text-center gap-7 md:gap-12 lg:text-start lg:w-1/2">
             <p className="text-[2.5em]  sm:text-[3em]  md:text-[3.5em] leading-[140%] tracking-tight">
